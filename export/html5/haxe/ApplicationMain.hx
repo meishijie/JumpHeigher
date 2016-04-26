@@ -38,10 +38,6 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
-		urls.push ("assets/Enemy.png");
-		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
 		urls.push ("assets/Fan.png");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
@@ -50,12 +46,12 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
-		urls.push ("flixel/sounds/beep.mp3");
-		types.push (lime.Assets.AssetType.MUSIC);
+		urls.push ("flixel/sounds/beep.ogg");
+		types.push (lime.Assets.AssetType.SOUND);
 		
 		
-		urls.push ("flixel/sounds/flixel.mp3");
-		types.push (lime.Assets.AssetType.MUSIC);
+		urls.push ("flixel/sounds/flixel.ogg");
+		types.push (lime.Assets.AssetType.SOUND);
 		
 		
 		urls.push ("Nokia Cellphone FC Small");
@@ -131,7 +127,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "150",
+			build: "88",
 			company: "HaxeFlixel",
 			file: "FlxMouseEventManager",
 			fps: 60,
@@ -148,10 +144,10 @@ class ApplicationMain {
 					depthBuffer: false,
 					display: 0,
 					fullscreen: false,
-					hardware: true,
+					hardware: false,
 					height: 960,
 					parameters: "{}",
-					resizable: true,
+					resizable: false,
 					stencilBuffer: true,
 					title: "FlxMouseEventManager",
 					vsync: true,
