@@ -1,0 +1,53 @@
+<component name="libraryTable">
+  <library name="1,8,6" type="Haxe">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/actuate/1,8,6" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/flixel-addons/1,1,1" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/flixel-addons/2,0,0" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/flixel-demos/2,1,0" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/flixel-templates/2,0,1" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/flixel-tools/1,1,2" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/flixel-ui/2,0,0" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/flixel/4,0,0" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/flixel/4,0,1" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/flixel/flixel" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/flixel/tests" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/hxcpp/3,2,205" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/lime-samples/2,6,0" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/lime/2,9,0" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/lime/2,9,1" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/nape/2,0,20" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/openfl/3,6,0" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/openfl/3,6,1" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/samcodes-admob/1,0,7" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/samcodes-admob/1,0,8" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/samcodes-chartboost/1,0,2" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/samcodes-chartboost/1,0,3" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/actuate/1,8,6" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/flixel-addons/1,1,1" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/flixel-addons/2,0,0" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/flixel-demos/2,1,0" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/flixel-templates/2,0,1" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/flixel-tools/1,1,2" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/flixel-ui/2,0,0" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/flixel/4,0,0" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/flixel/4,0,1" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/flixel/flixel" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/flixel/tests" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/hxcpp/3,2,205" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/lime-samples/2,6,0" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/lime/2,9,0" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/lime/2,9,1" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/nape/2,0,20" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/openfl/3,6,0" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/openfl/3,6,1" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/samcodes-admob/1,0,7" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/samcodes-admob/1,0,8" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/samcodes-chartboost/1,0,2" />
+      <root url="file://$PROJECT_DIR$/../../../Haxelib/samcodes-chartboost/1,0,3" />
+    </SOURCES>
+  </library>
+</component>
