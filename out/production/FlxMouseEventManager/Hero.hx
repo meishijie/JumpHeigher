@@ -19,14 +19,21 @@ class Hero extends FlxSprite
 	{
 		super(X, Y);
 
-		var canvas = new FlxSprite();
-		canvas.makeGraphic(50, 50, FlxColor.TRANSPARENT, true);
-		FlxG.state.add(canvas);
-		this.makeGraphic(50,50,FlxColor.TRANSPARENT);
-		canvas.drawCircle(0,0, 25, FlxColor.WHITE);
-
+		this.loadGraphic("assets/Enemy.png", true, 64, 64);
+		animation.add("1", [5], 0, false);
+		animation.play("1");
+		
 	}
-
 	
+    override public function update(elapsed:Float):Void
+    {
+        super.update(elapsed);
+		
+		 
+    }
+	 override public function destroy():Void
+    {
+        super.destroy();
+    }
 	
 }

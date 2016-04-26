@@ -23,15 +23,19 @@ class GamePlay extends FlxState
 	private var _NextTime:Int = 1;
 	private var _m:Int;
 	private var ground:FlxSprite;
-	
+	private var _tween:FlxTween;
+	private var _tweenOp:TweenOptions;
+	private var _tweenOp1:TweenOptions;
+
     override public function create():Void
     {
 		_hero = new Hero();
 		add(_hero);
 		_hero.setPosition(FlxG.width * 0.5 - _hero.frameWidth * 0.5, FlxG.height * 0.4);
-		_hero.maxVelocity.set(0, 800);
-		_hero.acceleration.y = 2000;
+		//_hero.maxVelocity.set(0, 1600);
+		//_hero.acceleration.y = 1600;
 		_hero.height = _hero.width = 50;
+		_hero.y = 450;
 
 		
 		ground = new FlxSprite();
@@ -43,6 +47,9 @@ class GamePlay extends FlxState
 		
 		_GEnemy = new FlxTypedGroup<Enemy>();
 		add(_GEnemy);
+
+		_tweenOp = { type: FlxTween.PERSIST };
+		_tweenOp1 = { type: FlxTween.BACKWARD };
     }
 
     override public function destroy():Void
@@ -53,23 +60,25 @@ class GamePlay extends FlxState
     override public function update(elapsed:Float):Void
     {
         super.update(elapsed);
-		FlxG.collide(ground, _hero);
+		FlxG.overlap(_GEnemy, _hero,overle);
 
-		if (FlxG.mouse.justPressed && _hero.isTouching(FlxObject.FLOOR))
+		if (FlxG.mouse.justPressed )//&& _hero.isTouching(FlxObject.FLOOR)
 		{
-			_hero.velocity.y = -2000 ;
+			//_hero.velocity.y = -1600 ;
+			trace(_hero.isTouching(FlxObject.FLOOR));
+			_tween = FlxTween.tween(_hero, {  y: _hero.y-300 }, 0.3, { type: FlxTween.PERSIST, onComplete: backTween});
 		}
-		
-		
+
+
 		_StepTime++;
 		var m = Math.floor(Math.random());
-		trace(m);
+		//trace(m);
 		if(_StepTime > _MaxStepTime){
 			_StepTime = 0;
 			makeEnemy();
 		}
 		_GEnemy.forEach(function(e){
-			trace(e);
+			//trace(e);
 			var oo:Enemy = cast (e, Enemy);
 			if (oo._canKill == true){
 				_GEnemy.remove(oo);
@@ -77,7 +86,15 @@ class GamePlay extends FlxState
 			}
 		});
     }
-	
+
+	private function overle(Object1:FlxObject, Object2:FlxObject){
+		trace("over");
+		Object1.kill();
+	}
+	private function backTween(tween:FlxTween):Void
+	{
+		_tween = FlxTween.tween(_hero, {  y: _hero.y+300}, 0.3, { type: FlxTween.PERSIST});
+	}
 	private function makeEnemy(){
 		_m = Math.round(Math.random()+1)-1;
 		switch(_m){
