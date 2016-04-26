@@ -22,8 +22,8 @@ class GamePlay extends FlxState
 	
     override public function create():Void
     {
-		//_SEnemy = new Enemy(0, 0, 1);
-		//add(_SEnemy);
+		var hero = new Hero();
+		add(hero);
 		_GEnemy = new FlxTypedGroup<Enemy>();
 		add(_GEnemy);
     }
@@ -43,14 +43,12 @@ class GamePlay extends FlxState
 		trace(m);
 		if(_StepTime > _MaxStepTime){
 			_StepTime = 0;
-			//FlxG.camera.shake();
 			makeEnemy();
 		}
 		_GEnemy.forEach(function(e){
 			trace(e);
 			var oo:Enemy = cast (e, Enemy);
 			if (oo._canKill == true){
-//				FlxG.camera.shake();
 				_GEnemy.remove(oo);
 				oo.exists = false;
 			}

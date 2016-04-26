@@ -22,7 +22,7 @@
 -D no-compilation
 -D NAPE_RELEASE_BUILD
 -D openfl-flash
--D verbose=1
+-D fdb
 -D web
 --macro flixel.system.macros.FlxDefines.run()
 -swf-lib export/flash/obj/assets.swf

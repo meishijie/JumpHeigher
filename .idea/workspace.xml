@@ -2,19 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33b16533-fc29-4c62-94ef-4fe3908d25bc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/Hero.hx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Psd/Enemy.fw.png" afterPath="$PROJECT_DIR$/Psd/Enemy.fw.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Enemy.png" afterPath="$PROJECT_DIR$/assets/Enemy.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/export/flash/bin/FlxMouseEventManager.swf" afterPath="$PROJECT_DIR$/export/flash/bin/FlxMouseEventManager.swf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/export/flash/obj/assets.swf" afterPath="$PROJECT_DIR$/export/flash/obj/assets.swf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FlxMouseEventManager.hxproj" afterPath="$PROJECT_DIR$/FlxMouseEventManager.hxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FlxMouseEventManager.iml" afterPath="$PROJECT_DIR$/FlxMouseEventManager.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/export/.build" afterPath="$PROJECT_DIR$/export/.build" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/export/flash/haxe/ApplicationMain.hx" afterPath="$PROJECT_DIR$/export/flash/haxe/ApplicationMain.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/export/flash/haxe/DefaultAssetLibrary.hx" afterPath="$PROJECT_DIR$/export/flash/haxe/DefaultAssetLibrary.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/export/flash/haxe/NMEPreloader.hx" afterPath="$PROJECT_DIR$/export/flash/haxe/NMEPreloader.hx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/export/flash/haxe/debug.hxml" afterPath="$PROJECT_DIR$/export/flash/haxe/debug.hxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/export/flash/haxe/final.hxml" afterPath="$PROJECT_DIR$/export/flash/haxe/final.hxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/export/flash/haxe/release.hxml" afterPath="$PROJECT_DIR$/export/flash/haxe/release.hxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FlxMouseEventManager/GamePlay.hx" afterPath="$PROJECT_DIR$/out/production/FlxMouseEventManager/GamePlay.hx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/GamePlay.hx" afterPath="$PROJECT_DIR$/source/GamePlay.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/GameTitle.hx" afterPath="$PROJECT_DIR$/source/GameTitle.hx" />
     </list>
     <ignored path="FlxMouseEventManager.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,12 +35,22 @@
     <favorites_list name="FlxMouseEventManager" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Enemy.hx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/Enemy.hx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.357142">
-              <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Hero.hx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/Hero.hx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-21.214285">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -50,9 +59,13 @@
       <file leaf-file-name="GamePlay.hx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/GamePlay.hx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5951557">
-              <caret line="70" column="43" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
-              <folding />
+            <state vertical-scroll-proportion="0.5814978">
+              <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+              <folding>
+                <marker date="1461669629497" expanded="true" signature="1712:1751" placeholder="{...}" />
+                <marker date="1461669629497" expanded="true" signature="1781:1915" placeholder="{...}" />
+                <marker date="1461669629497" expanded="true" signature="1858:1911" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,6 +84,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/source/Enemy.hx" />
+        <option value="$PROJECT_DIR$/source/Hero.hx" />
         <option value="$PROJECT_DIR$/source/GamePlay.hx" />
       </list>
     </option>
@@ -81,10 +95,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="126" />
-    <option name="y" value="440" />
-    <option name="width" value="1575" />
-    <option name="height" value="925" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -93,7 +107,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -112,6 +126,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -146,14 +162,17 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunManager" selected="Haxe Application.Unnamed">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -193,7 +212,7 @@
       <option name="customFileToLaunch" value="false" />
       <option name="customFileToLaunchPath" value="" />
       <option name="customRemoteDebugging" value="false" />
-      <module />
+      <module name="" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -279,27 +298,28 @@
       <option name="number" value="Default" />
       <updated>1461661978432</updated>
       <workItem from="1461661979676" duration="1677000" />
+      <workItem from="1461664373760" duration="3233000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1677000" />
+    <option name="totallyTimeSpent" value="4910000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="126" y="440" width="1575" height="925" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23455234" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2012987" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24950495" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20149253" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -334,6 +354,26 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/source/Enemy.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/GamePlay.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1461669629497" expanded="true" signature="1712:1751" placeholder="{...}" />
+            <marker date="1461669629497" expanded="true" signature="1781:1915" placeholder="{...}" />
+            <marker date="1461669629497" expanded="true" signature="1858:1911" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://C:/HaxeToolkit/haxe/lib/flixel/4,0,1/flixel/group/FlxGroup.hx">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5686275">
@@ -344,17 +384,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/Enemy.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.357142">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/HaxeToolkit/haxe/lib/flixel/4,0,1/flixel/util/FlxColor.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/HaxeToolkit/haxe/lib/flixel/4,0,1/flixel/FlxSprite.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33242506">
+          <caret line="178" column="46" selection-start-line="178" selection-start-column="42" selection-end-line="178" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/HaxeToolkit/haxe/lib/flixel/4,0,1/flixel/util/FlxSpriteUtil.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7207334">
+          <caret line="663" column="19" selection-start-line="663" selection-start-column="5" selection-end-line="663" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Hero.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.214285">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/GamePlay.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5951557">
-          <caret line="70" column="43" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
-          <folding />
+        <state vertical-scroll-proportion="0.5814978">
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+          <folding>
+            <marker date="1461669629497" expanded="true" signature="1712:1751" placeholder="{...}" />
+            <marker date="1461669629497" expanded="true" signature="1781:1915" placeholder="{...}" />
+            <marker date="1461669629497" expanded="true" signature="1858:1911" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,5 +1,7 @@
 package ;
 
+import flash.desktop.Clipboard;
+import flixel.FlxSprite;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
@@ -7,28 +9,41 @@ import flixel.text.FlxText;
 import flixel.FlxG;
 import flixel.addons.display.FlxExtendedSprite;
 import flixel.FlxState;
-
+import flixel.input.mouse.FlxMouseEventManager;
+import flixel.FlxObject;
 
 class GamePlay extends FlxState
 {
 
-
+	private var _hero:Hero;
 	private var _SEnemy:Enemy;
 	private var _GEnemy:FlxTypedGroup<Enemy>;
 	private var _StepTime:Int = 0;
 	private var _MaxStepTime:Int = 100;
 	private var _NextTime:Int = 1;
 	private var _m:Int;
+	private var ground:FlxSprite;
 	
     override public function create():Void
     {
-		//_SEnemy = new Enemy(0, 0, 1);
-		//add(_SEnemy);
+		_hero = new Hero();
+		add(_hero);
+		_hero.setPosition(FlxG.width * 0.5 - _hero.frameWidth * 0.5, FlxG.height * 0.4);
+		_hero.maxVelocity.set(0, 800);
+		_hero.acceleration.y = 2000;
+		_hero.height = _hero.width = 50;
+
+		
+		ground = new FlxSprite();
+		ground.makeGraphic(FlxG.width, Math.floor(FlxG.height * 0.5), FlxColor.WHITE);
+		ground.setPosition(0, FlxG.height * 0.5);
+		add(ground);
+		ground.moves = false;
+		ground.immovable = true;
+		
 		_GEnemy = new FlxTypedGroup<Enemy>();
 		add(_GEnemy);
     }
-
-
 
     override public function destroy():Void
     {
@@ -38,19 +53,25 @@ class GamePlay extends FlxState
     override public function update(elapsed:Float):Void
     {
         super.update(elapsed);
+		FlxG.collide(ground, _hero);
+
+		if (FlxG.mouse.justPressed && _hero.isTouching(FlxObject.FLOOR))
+		{
+			_hero.velocity.y = -2000 ;
+		}
+		
+		
 		_StepTime++;
 		var m = Math.floor(Math.random());
 		trace(m);
 		if(_StepTime > _MaxStepTime){
 			_StepTime = 0;
-			//FlxG.camera.shake();
 			makeEnemy();
 		}
 		_GEnemy.forEach(function(e){
 			trace(e);
 			var oo:Enemy = cast (e, Enemy);
 			if (oo._canKill == true){
-//				FlxG.camera.shake();
 				_GEnemy.remove(oo);
 				oo.exists = false;
 			}
