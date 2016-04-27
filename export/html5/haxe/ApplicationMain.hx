@@ -38,6 +38,10 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
+		urls.push ("assets/Enemy.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
 		urls.push ("assets/Fan.png");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
@@ -127,7 +131,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "88",
+			build: "26",
 			company: "HaxeFlixel",
 			file: "FlxMouseEventManager",
 			fps: 60,

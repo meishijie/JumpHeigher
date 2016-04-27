@@ -26,6 +26,7 @@ class GamePlay extends FlxState
 	private var _tween:FlxTween;
 	private var _tweenOp:TweenOptions;
 	private var _tweenOp1:TweenOptions;
+	private var _canJump:Bool = true;
 
     override public function create():Void
     {
@@ -62,11 +63,12 @@ class GamePlay extends FlxState
         super.update(elapsed);
 		FlxG.overlap(_GEnemy, _hero,overle);
 
-		if (FlxG.mouse.justPressed )//&& _hero.isTouching(FlxObject.FLOOR)
+		if (FlxG.mouse.justPressed && _canJump == true )//&& _hero.isTouching(FlxObject.FLOOR)
 		{
 			//_hero.velocity.y = -1600 ;
+			_canJump = false;
 			trace(_hero.isTouching(FlxObject.FLOOR));
-			_tween = FlxTween.tween(_hero, {  y: _hero.y-300 }, 0.3, { type: FlxTween.PERSIST, onComplete: backTween});
+			_tween = FlxTween.tween(_hero, {  y: 150 }, 0.3, { type: FlxTween.PERSIST, onComplete: backTween});
 		}
 
 
@@ -93,7 +95,11 @@ class GamePlay extends FlxState
 	}
 	private function backTween(tween:FlxTween):Void
 	{
-		_tween = FlxTween.tween(_hero, {  y: _hero.y+300}, 0.3, { type: FlxTween.PERSIST});
+		_tween = FlxTween.tween(_hero, {  y: 450}, 0.3, { type: FlxTween.PERSIST, onComplete: TurnCanJump});
+	}
+	private function TurnCanJump(tween:FlxTween):Void
+	{
+		_canJump = true;
 	}
 	private function makeEnemy(){
 		_m = Math.round(Math.random()+1)-1;

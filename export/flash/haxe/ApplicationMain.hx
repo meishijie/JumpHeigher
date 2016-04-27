@@ -131,7 +131,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "24",
+			build: "29",
 			company: "HaxeFlixel",
 			file: "FlxMouseEventManager",
 			fps: 60,
