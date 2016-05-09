@@ -2,6 +2,7 @@ package ;
 
 import flash.desktop.Clipboard;
 import flixel.FlxSprite;
+import flixel.effects.particles.FlxEmitter;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
@@ -51,6 +52,11 @@ class GamePlay extends FlxState
 
 		_tweenOp = { type: FlxTween.PERSIST };
 		_tweenOp1 = { type: FlxTween.BACKWARD };
+		
+		var _emitter:FlxEmitter = new FlxEmitter(FlxG.width / 2 , FlxG.height / 2, 200);
+		_emitter.makeParticles(2, 2, FlxColor.WHITE, 200);
+		add(_emitter);
+		_emitter.start(false, 0.01);
     }
 
     override public function destroy():Void
